@@ -1,17 +1,23 @@
+// Use "javac -d <outputDir>" to designate where class files should be generated,
+// otherwise defaults to sibling of source file.
+
 package org.ocp;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+// CONTINUE: https://www.udemy.com/course/java-se-11-developer-1z0-819-ocp-course-part-1/learn/lecture/17343168#overview
+
+import org.ocp.imports.Imports;
+
+/**
+ * Notes from the following courses on Udemy:
+ * <ul>
+ *     <li>Java SE 11 Developer 1Z0-819 OCP Course – Part 1</li>
+ *     <li>Java SE 11 Developer 1Z0-819 OCP Course – Part 2</li>
+ * </ul>
+ */
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Java 11 OCP exam prep. Hello!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Imports.main(args);
     }
 }
